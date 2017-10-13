@@ -1,0 +1,18 @@
+;ds_title;_catalog_parent_name;gruppo;note;ultima_modifica;ds_name;ds_id;ds_license;url;mymtype
+0;;;;;;circoscrizioni;;;;
+1;Elezioni Amministrative 2014 - Eletti;Comune di Bari;Popolazione e società;"<p>Gli eletti delle Amministrative  e Municipi Bari 2014</p>
+";"""16.06.2014""";elezioni-amministrative-2014-eletti;ebad7b1c-ca8c-4dda-ac1f-a9f550e8fac6;CC0 1.0;;
+2;Censimento in pillole 2013;Comune di Bari;Popolazione e società;"<p>Il Censimento 2013 in pillole</p>
+";"""Dicembre 2013""";censimento-pillole-2013;481853e2-e736-4189-9bef-0629d5c17df9;CC0 1.0;http://opendata.comune.bari.it/dataset/481853e2-e736-4189-9bef-0629d5c17df9/resource/4e2fcdef-044e-44b9-813a-fdd951a99517/download/20131223t135723materialeperlapubblicazione.zip;zip
+3;Rilevazione dei prezzi al consumo;Comune di Bari;Popolazione e società;"<p>Rilevazione dei prezzi al consumo del Comune di Bari del 2013</p>
+";"""Gennaio 2013""";rilevazione-dei-prezzi-consumo;2ab37d6e-e71e-4420-bd76-ae1c0a19e0c1;CC0 1.0;http://opendata.comune.bari.it/dataset/2ab37d6e-e71e-4420-bd76-ae1c0a19e0c1/resource/e19cc60b-9fd9-48d5-9894-6d31c3f1711a/download/20130221t105052anticipazionenic.csv;csv
+4;Suoli non recintati;Comune di Bari;Ambiente;"<p>Mappa dei suoli non recintati del Comune di Bari</p>
+";"""2006""";suoli-non-recintati;e2030ba6-589c-48f7-acd6-52d80df60ce7;CC0 1.0;http://opendata.comune.bari.it/dataset/e2030ba6-589c-48f7-acd6-52d80df60ce7/resource/0b28900d-2cca-4843-8268-6e73cef749e9/download/20130222t135810amiusuolinonrecintati.zip;zip
+5;Impianti pubblicitari del Comune di Bari;Comune di Bari;Ambiente;"<p>Sistema Informativo Territoriale: impianti pubblicitari del Comune di Bari</p>
+";"""Febbraio 2011""";impianti-pubblicitari-comune-bari;5d8077ec-524e-42fd-a626-257fc0ddc050;CC0 1.0;http://opendata.comune.bari.it/dataset/5d8077ec-524e-42fd-a626-257fc0ddc050/resource/d69c0eea-17c2-49a2-8ee6-67061cedd274/download/20121212t164340impiantipubblicitari.zip;zip
+6;Elezioni Amministrative 2014 - Liste;Comune di Bari;Popolazione e società;"<p>Voti di Lista suddivisi per tutte le sezioni e per le sezioni dei cinque Municipi</p>
+";"""Maggio 2014""";elezioni-amministrative-2014-liste;fe13c1c1-60a2-4b9f-aeb9-ef26f341aba2;CC0 1.0;http://opendata.comune.bari.it/dataset/fe13c1c1-60a2-4b9f-aeb9-ef26f341aba2/resource/63423d06-57a4-4e1b-a7fd-b98252079e5d/download/20140529t131326votilistesezionecomune.xls;xls
+7;;;;;;organico-comune-bari;;;;
+8;Elezioni Comunali 2009;Comune di Bari;Popolazione e società;"<p>Dati relativi alle Elezioni Comunali 2009 nel Comune di Bari</p>
+";"""giugno 2009""";elezioni-comunali-2009;ea772f0c-d48c-421a-94e2-dddc80beb33a;CC0 1.0;http://opendata.comune.bari.it/dataset/ea772f0c-d48c-421a-94e2-dddc80beb33a/resource/fafcaddb-93d7-4702-9821-f8ef9aefba20/download/20140204t164420risultatiperliste.xlsx;xlsx
+9;;;;;;aree-verdi;;;;
