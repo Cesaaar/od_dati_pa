@@ -19,13 +19,13 @@ class DsMetadatiPA(luigi.Task):
         url_list = 'http://www.dati.gov.it/api/3/action/package_list'
         df_list = pd.read_json(url_list)
         
-        df_list_test = df_list[0:100]
+        #df_list_test = df_list[0:10]
         
-        count = df_list_test['result'].count()
+        count = df_list['result'].count()
         
         l = []
         i = 1
-        for index, row in df_list_test.iterrows():
+        for index, row in df_list.iterrows():
             progress = i*100/count
             self.set_status_message("Progress Bar")
             url_meta = 'http://www.dati.gov.it/api/3/action/package_show?id='+row['result']
