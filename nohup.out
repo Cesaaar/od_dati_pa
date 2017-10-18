@@ -1,0 +1,387 @@
+[C 15:07:50.535 NotebookApp] No such file or directory: /home/pi/Documents/Progetti/opendata/od_dati_pa/–ip=0.0.0.0
+[I 15:08:38.896 NotebookApp] Serving notebooks from local directory: /home/pi/Documents/Progetti/opendata/od_dati_pa
+[I 15:08:38.897 NotebookApp] 0 active kernels 
+[I 15:08:38.897 NotebookApp] The Jupyter Notebook is running at: http://0.0.0.0:8888/
+[I 15:08:38.897 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 15:08:38.900 NotebookApp] No web browser found: could not locate runnable browser.
+[I 15:09:04.675 NotebookApp] 302 GET / (151.25.239.188) 4.19ms
+Traceback (most recent call last):
+  File "/usr/local/bin/luigi", line 11, in <module>
+    sys.exit(luigi_run())
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline.py", line 11, in luigi_run
+    run_with_retcodes(argv)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/retcodes.py", line 69, in run_with_retcodes
+    with luigi.cmdline_parser.CmdlineParser.global_instance(argv):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 52, in global_instance
+    new_value = CmdlineParser(cmdline_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 64, in __init__
+    self._attempt_load_module(known_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 144, in _attempt_load_module
+    __import__(module)
+ImportError: No module named API_Dati_Pubblici_Luigi
+[W 15:10:17.478 NotebookApp] Notebook API_Dati_Pubblici.ipynb is not trusted
+[W 15:10:17.606 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171015150837 (151.25.239.188) 47.64ms referer=http://cesarhome.hopto.org:8888/notebooks/API_Dati_Pubblici.ipynb
+[I 15:10:17.914 NotebookApp] Kernel started: 88ae6708-bf62-4703-a9a0-4d69d9e1ad69
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 1462] Worker Worker(salt=352720934, workers=1, host=raspberrypi, username=pi, pid=1462) running   DsMetadatiPA()
+INFO: [pid 1462] Worker Worker(salt=352720934, workers=1, host=raspberrypi, username=pi, pid=1462) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=352720934, workers=1, host=raspberrypi, username=pi, pid=1462) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=326747793, workers=1, host=raspberrypi, username=pi, pid=1478) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 present dependencies were encountered:
+    - 1 DsMetadatiPA()
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=665461285, workers=1, host=raspberrypi, username=pi, pid=1493) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 present dependencies were encountered:
+    - 1 DsMetadatiPA()
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+[W 15:15:01.311 NotebookApp] delete /2017-10-15_DSMetadatiPA.csv
+[I 15:15:08.335 NotebookApp] Saving file at /API_Dati_Pubblici_Luigi.py
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 1547] Worker Worker(salt=134980886, workers=1, host=raspberrypi, username=pi, pid=1547) running   DsMetadatiPA()
+INFO: [pid 1547] Worker Worker(salt=134980886, workers=1, host=raspberrypi, username=pi, pid=1547) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=134980886, workers=1, host=raspberrypi, username=pi, pid=1547) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+[W 15:16:53.079 NotebookApp] Notebook Analisi_DS_Metadati_PA.ipynb is not trusted
+[W 15:16:53.137 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20171015150837 (151.25.239.188) 6.18ms referer=http://cesarhome.hopto.org:8888/notebooks/Analisi_DS_Metadati_PA.ipynb
+[I 15:16:53.325 NotebookApp] Kernel started: 93b7ccd8-204e-476b-a233-03bac1b7be6d
+[I 15:17:07.780 NotebookApp] Saving file at /Analisi_DS_Metadati_PA.ipynb
+[W 15:17:07.784 NotebookApp] Saving untrusted notebook Analisi_DS_Metadati_PA.ipynb
+[I 15:46:43.927 NotebookApp] 302 GET / (151.25.239.188) 1.48ms
+[I 15:46:50.373 NotebookApp] Kernel shutdown: 88ae6708-bf62-4703-a9a0-4d69d9e1ad69
+[I 15:46:52.354 NotebookApp] Kernel shutdown: 93b7ccd8-204e-476b-a233-03bac1b7be6d
+[I 15:47:44.419 NotebookApp] 302 GET / (5.170.129.58) 2.54ms
+[C 15:51:35.172 NotebookApp] received signal 15, stopping
+[I 15:51:35.175 NotebookApp] Shutting down kernels
+Traceback (most recent call last):
+  File "/usr/local/bin/luigi", line 11, in <module>
+    sys.exit(luigi_run())
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline.py", line 11, in luigi_run
+    run_with_retcodes(argv)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/retcodes.py", line 69, in run_with_retcodes
+    with luigi.cmdline_parser.CmdlineParser.global_instance(argv):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 52, in global_instance
+    new_value = CmdlineParser(cmdline_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 64, in __init__
+    self._attempt_load_module(known_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 144, in _attempt_load_module
+    __import__(module)
+  File "/home/pi/Documents/Progetti/opendata/od_dati_pa/API_Dati_Pubblici_Luigi.py", line 35
+    d['ds_name']=df_name
+    ^
+IndentationError: unexpected indent
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+INFO: Retrying attempt 2 of 3 (max)
+INFO: Wait for 30 seconds
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+INFO: Retrying attempt 2 of 3 (max)
+INFO: Wait for 30 seconds
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+INFO: Retrying attempt 3 of 3 (max)
+INFO: Wait for 30 seconds
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+INFO: Retrying attempt 3 of 3 (max)
+INFO: Wait for 30 seconds
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+ERROR: Luigi unexpected framework error while scheduling DsMetadatiPA()
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 665, in add
+    for next in self._add(item, is_complete):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 782, in _add
+    retry_policy_dict=_get_retry_policy_dict(task),
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 499, in _add_task
+    self._scheduler.add_task(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/scheduler.py", line 115, in rpc_func
+    return self._request('/api/{}'.format(fn_name), actual_args, **request_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 148, in _request
+    page = self._fetch(url, body, log_exceptions)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 140, in _fetch
+    last_exception
+RPCError: Errors (3 attempts) when connecting to remote scheduler 'http://0.0.0.0:8082'
+ERROR: Failed connecting to remote scheduler 'http://0.0.0.0:8082'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 129, in _fetch
+    response = self._fetcher.fetch(full_url, body, self._connect_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 85, in fetch
+    resp = self.session.get(full_url, data=body, timeout=timeout)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 469, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 457, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 569, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 407, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(111, 'Connection refused'))
+WARNING: Failed pinging scheduler
+INFO: Worker Worker(salt=420471904, workers=1, host=raspberrypi, username=pi, pid=17118) was stopped. Shutting down Keep-Alive thread
+ERROR: Uncaught exception in luigi
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/retcodes.py", line 74, in run_with_retcodes
+    worker = luigi.interface._run(argv)['worker']
+  File "/usr/local/lib/python2.7/dist-packages/luigi/interface.py", line 244, in _run
+    return _schedule_and_run([cp.get_task_obj()], worker_scheduler_factory)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/interface.py", line 201, in _schedule_and_run
+    success &= worker.add(t, env_params.parallel_scheduling)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 665, in add
+    for next in self._add(item, is_complete):
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 782, in _add
+    retry_policy_dict=_get_retry_policy_dict(task),
+  File "/usr/local/lib/python2.7/dist-packages/luigi/worker.py", line 499, in _add_task
+    self._scheduler.add_task(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/scheduler.py", line 115, in rpc_func
+    return self._request('/api/{}'.format(fn_name), actual_args, **request_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 148, in _request
+    page = self._fetch(url, body, log_exceptions)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/rpc.py", line 140, in _fetch
+    last_exception
+RPCError: Errors (3 attempts) when connecting to remote scheduler 'http://0.0.0.0:8082'
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 17172] Worker Worker(salt=120925733, workers=1, host=raspberrypi, username=pi, pid=17172) running   DsMetadatiPA()
+INFO: [pid 17172] Worker Worker(salt=120925733, workers=1, host=raspberrypi, username=pi, pid=17172) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=120925733, workers=1, host=raspberrypi, username=pi, pid=17172) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 17226] Worker Worker(salt=727327750, workers=1, host=raspberrypi, username=pi, pid=17226) running   DsMetadatiPA()
+INFO: [pid 17226] Worker Worker(salt=727327750, workers=1, host=raspberrypi, username=pi, pid=17226) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=727327750, workers=1, host=raspberrypi, username=pi, pid=17226) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 17264] Worker Worker(salt=724378543, workers=1, host=raspberrypi, username=pi, pid=17264) running   DsMetadatiPA()
+INFO: [pid 17264] Worker Worker(salt=724378543, workers=1, host=raspberrypi, username=pi, pid=17264) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=724378543, workers=1, host=raspberrypi, username=pi, pid=17264) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 12967] Worker Worker(salt=060063043, workers=1, host=raspberrypi, username=pi, pid=12967) running   DsMetadatiPA()

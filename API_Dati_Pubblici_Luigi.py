@@ -19,7 +19,7 @@ class DsMetadatiPA(luigi.Task):
         url_list = 'http://www.dati.gov.it/api/3/action/package_list'
         df_list = pd.read_json(url_list)
         
-        #df_list_test = df_list[0:10]
+        #df_list = df_list[0:20]
         
         count = df_list['result'].count()
         
@@ -31,21 +31,30 @@ class DsMetadatiPA(luigi.Task):
             url_meta = 'http://www.dati.gov.it/api/3/action/package_show?id='+row['result']
             d = {}
             try:
-                df_meta = pd.read_json(url_meta)
-                d['ds_name']=row['result']
-                d['ds_title'] = df_meta['result']['title']
-                d['ds_id'] = df_meta['result']['id']
-                d['ds_license'] = df_meta['result']['license_id']
-                d['_catalog_parent_name']=df_meta['result']['_catalog_parent_name']
-                d['ultima_modifica']=HTMLParser.HTMLParser().unescape(df_meta['result']['extras'][1]['value'])
-                d['gruppo'] = df_meta['result']['groups'][0]['display_name']
-                d['note'] = df_meta['result']['notes']
-                if 'resources' in df_meta['result']:
-                    d['url']=df_meta['result']['resources'][-1]['url']
-                    d['mymtype']=df_meta['result']['resources'][-1]['mimetype']
-                else:
-                    d['url'] = np.nan
-                    d['mymtype'] = np.nan
+				df_meta = pd.read_json(url_meta)
+				d['ds_name']=row['result']
+				d['ds_title'] = df_meta['result']['title']
+				d['ds_id'] = df_meta['result']['id']
+				try:
+					d['ds_license'] = df_meta['result']['license_id']
+				except:
+					d['ds_license'] = np.nan
+				d['_catalog_parent_name']=df_meta['result']['_catalog_parent_name']
+				d['ultima_modifica']=df_meta['result']['metadata_modified'][0:10]
+				try:
+					d['gruppo'] = df_meta['result']['groups'][0]['display_name']
+				except:
+					d['gruppo'] = np.nan
+				try:
+					d['note'] = df_meta['result']['notes']
+				except:
+					d['note'] = np.nan
+				try:
+					d['url']=df_meta['result']['resources'][-1]['url']
+					d['mymtype']=df_meta['result']['resources'][-1]['mimetype']
+				except:
+					d['url'] = np.nan
+					d['mymtype'] = np.nan
             except:
                 d['ds_name']=row['result']
                 d['ds_title'] = np.nan
