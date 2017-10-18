@@ -32,7 +32,7 @@ DEBUG: Asking scheduler for work...
 DEBUG: Pending tasks: 1
 INFO: [pid 1462] Worker Worker(salt=352720934, workers=1, host=raspberrypi, username=pi, pid=1462) running   DsMetadatiPA()
 INFO: [pid 1462] Worker Worker(salt=352720934, workers=1, host=raspberrypi, username=pi, pid=1462) done      DsMetadatiPA()
-DEBUG: 1 running tasks, waiting for next task to finish
+vDEBUG: 1 running tasks, waiting for next task to finish
 INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
 DEBUG: Asking scheduler for work...
 DEBUG: Done
@@ -385,3 +385,94 @@ INFO: Running Worker with 1 processes
 DEBUG: Asking scheduler for work...
 DEBUG: Pending tasks: 1
 INFO: [pid 12967] Worker Worker(salt=060063043, workers=1, host=raspberrypi, username=pi, pid=12967) running   DsMetadatiPA()
+INFO: [pid 12967] Worker Worker(salt=060063043, workers=1, host=raspberrypi, username=pi, pid=12967) done      DsMetadatiPA()
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=060063043, workers=1, host=raspberrypi, username=pi, pid=12967) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 ran successfully:
+    - 1 DsMetadatiPA()
+
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+Traceback (most recent call last):
+  File "/usr/local/bin/luigi", line 11, in <module>
+    sys.exit(luigi_run())
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline.py", line 11, in luigi_run
+    run_with_retcodes(argv)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/retcodes.py", line 69, in run_with_retcodes
+    with luigi.cmdline_parser.CmdlineParser.global_instance(argv):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 52, in global_instance
+    new_value = CmdlineParser(cmdline_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 64, in __init__
+    self._attempt_load_module(known_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 144, in _attempt_load_module
+    __import__(module)
+  File "/home/pi/Documents/Progetti/opendata/od_dati_pa/API_Dati_Pubblici_Luigi.py", line 35
+    d['ds_name']=row['result']
+                             ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/local/bin/luigi", line 11, in <module>
+    sys.exit(luigi_run())
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline.py", line 11, in luigi_run
+    run_with_retcodes(argv)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/retcodes.py", line 69, in run_with_retcodes
+    with luigi.cmdline_parser.CmdlineParser.global_instance(argv):
+  File "/usr/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 52, in global_instance
+    new_value = CmdlineParser(cmdline_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 64, in __init__
+    self._attempt_load_module(known_args)
+  File "/usr/local/lib/python2.7/dist-packages/luigi/cmdline_parser.py", line 144, in _attempt_load_module
+    __import__(module)
+  File "/home/pi/Documents/Progetti/opendata/od_dati_pa/API_Dati_Pubblici_Luigi.py", line 37
+    d['ds_id'] = df_meta['result']['id']
+    ^
+IndentationError: unexpected indent
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=521033718, workers=1, host=raspberrypi, username=pi, pid=17048) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 present dependencies were encountered:
+    - 1 DsMetadatiPA()
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing external dependencies
+
+===== Luigi Execution Summary =====
+
+/usr/local/lib/python2.7/dist-packages/pandas/core/computation/__init__.py:18: UserWarning: The installed version of numexpr 2.4 is not supported in pandas and will be not be used
+The minimum supported version is 2.4.6
+
+  ver=ver, min_ver=_MIN_NUMEXPR_VERSION), UserWarning)
+DEBUG: Checking if DsMetadatiPA() is complete
+INFO: Informed scheduler that task   DsMetadatiPA__99914b932b   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 17107] Worker Worker(salt=905317066, workers=1, host=raspberrypi, username=pi, pid=17107) running   DsMetadatiPA()
