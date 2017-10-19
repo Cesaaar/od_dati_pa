@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQCloud Example</title>
+    <link rel="stylesheet" type="text/css" href="jqcloud.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jqcloud-1.0.4.js"></script>
+    <script type="text/javascript">
+      /*!
+       * Create an array of word objects, each representing a word in the cloud
+       */
+      var word_array = [{'text': 'Comune', 'weight': 4718},
+						 {'text': '2014', 'weight': 1472},
+						 {'text': '2013', 'weight': 1328},
+						 {'text': '2015', 'weight': 963},
+						 {'text': '2012', 'weight': 782},
+						 {'text': 'sesso', 'weight': 684},
+						 {'text': 'Numero', 'weight': 642},
+						 {'text': '2016', 'weight': 628},
+						 {'text': 'LIV', 'weight': 554},
+						 {'text': '2011', 'weight': 532},
+						 {'text': 'Popolazione', 'weight': 514},
+						 {'text': '2010', 'weight': 480},
+						 {'text': 'Servizi', 'weight': 458},
+						 {'text': 'Regione', 'weight': 379},
+						 {'text': 'Anni', 'weight': 371},
+						 {'text': '2017', 'weight': 361},
+						 {'text': 'Aree', 'weight': 351},
+						 {'text': 'Elenco', 'weight': 345},
+						 {'text': 'residente', 'weight': 340},
+						 {'text': '2007', 'weight': 332},
+						 {'text': 'Provincia', 'weight': 316},
+						 {'text': 'Firenze', 'weight': 298},
+						 {'text': 'AMB', 'weight': 296},
+						 {'text': 'SINTESI', 'weight': 294},
+						 {'text': '2008', 'weight': 289},
+						 {'text': 'Comunit', 'weight': 281},
+						 {'text': '2009', 'weight': 276},
+						 {'text': 'lavoratori', 'weight': 268},
+						 {'text': 'DETTAGLIO', 'weight': 260},
+						 {'text': 'classe', 'weight': 256}];
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#example").jQCloud(word_array);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- You should explicitly specify the dimensions of the container element -->
+    <div id="example" style="width: 550px; height: 350px;"></div>
+  </body>
+</html>
