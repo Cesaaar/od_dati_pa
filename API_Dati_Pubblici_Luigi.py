@@ -4,6 +4,7 @@ import numpy as np
 import HTMLParser
 import datetime
 import luigi
+import os
 
 class DsMetadatiPA(luigi.Task):
     
@@ -11,7 +12,9 @@ class DsMetadatiPA(luigi.Task):
         now = datetime.datetime.now()
         dt = now.strftime("%Y-%m-%d")
         filename = dt + '_DSMetadatiPA.csv'
-        return luigi.LocalTarget(filename)
+		dir_in = os.path.join(os.path.abspath(''),'input')
+		df_file = os.path.join(dir_in, filename)
+        return luigi.LocalTarget(df_file)
     
     def run(self):
         
@@ -19,7 +22,7 @@ class DsMetadatiPA(luigi.Task):
         url_list = 'http://www.dati.gov.it/api/3/action/package_list'
         df_list = pd.read_json(url_list)
         
-        #df_list = df_list[0:20]
+        df_list = df_list[0:20]
         
         count = df_list['result'].count()
         
