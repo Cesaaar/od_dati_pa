@@ -1,18 +1,30 @@
 # Metadati Open Data Pubblica Amministrazione
 
-L'obiettivo è analizzare il **catalogo dei dati aperti** della Pubblica Amministrazione Italiana https://www.dati.gov.it. Il primo step consiste nel realizzare un dataset contenente i principali metadati di tutti i dataset presenti in catalogo, il secondo step prevede l'analsi di queste informazioni.
+Analisi del **catalogo dei dati aperti** della Pubblica Amministrazione Italiana 
 
-## Realizzare il Dataset dei Metadati
-Per realizzare il dataset è stato utilizzato lo script API_Dati_Pubblici_Luigi.py, questo script è stato eseguito in modalità batch su un raspberry con installato lo schedulatore Luigi http://luigi.readthedocs.io/en/stable/index.html.
+## Fonti Dati
+| Fonte | Descrizione | Link |
+| ------ | ------ | ------ |
+| AGID | Agenzia per l'Italia Digitale |https://www.dati.gov.it |
 
-Output -> XXX
+## Visualizzazioni
+| File | Descrizione |
+| ------ | ------ |
+| input/XXX_DSMetadatiPA.csv | Dataset dei metadati degli open data |
+| output/Cataloghi Dataset.png | Distribuzione dataset per catalogo padre |
+| output/Gruppi Dataset.png | Distribuzione dataset per gruppo/tematica |
+| output/XXX_Note_WordCloud.png | Word Cloud sul campo note |
+| output/XXX_Titolo_WordCloud.png | Word Cloud sul campo titolo |
 
-## Analisi dei Metadati
-XXX
+## Configurazioni
+Queste istruzioni ti permetteranno di realizzare una copia del progetto in locale per eseguire il codice.
 
-## Punti Aperti
-1. Necessaria una maggiore Data Quality (stat su Dataset no metadata, open data in formato del cavolo zip, etc, dati formattate male, etc. etc.)
+#### Prerequisiti
+1. Installare l'ambiente Anaconda, comprende Jupyter. https://docs.anaconda.com/anaconda/install/
+2. Copiare il repository sul proprio account GitHub.
+3. Copiare il repository in locale
 
-2.Necessaria una maggiore strutturazione (Regione, Provincia, etc..), vedi wordcloud
-
-3. Necessario che lo stesso dato sia pubblicato da tutti
+#### Librerie aggiuntive
+Anaconda installa in automatico più di 150 package per analisi dati.
+Libreria **luigi** per l'esecuzione batch di API_Dati_Pubblici_Luigi.py il cui compito è di realizzare il Dataset dei metadati.
+Libreria **nltk** per la realizzazione del World Cloud
